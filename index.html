@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -48,18 +49,30 @@
           <ul class="address-container">
             <li>
               <a
-                class="header-link address-text"
+                class="header-address-link address-text"
                 href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="header-link address-text" href="tel:+110001111111"
+              <a
+                class="header-address-link address-text"
+                href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <!--menu hamburger-->
+        <button
+          class="menu-hamburger-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-hamburger-icon" width="32" height="22">
+            <use href="./images/icons.svg#menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -78,51 +91,51 @@
       <section class="section-beta page">
         <div class="container">
           <h2 class="visually-hidden header-two">Why us?</h2>
-          <ul class="section-container">
-            <li class="webstudio-card card">
+          <ul class="webstudio-container">
+            <li class="webstudio-card">
               <div class="webstudio-card-image">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
               <h3 class="header-three">Strategy</h3>
-              <p>
+              <p class="webstudio-card-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="webstudio-card card">
+            <li class="webstudio-card">
               <div class="webstudio-card-image">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
               <h3 class="header-three">Punctuality</h3>
-              <p>
+              <p class="webstudio-card-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="webstudio-card card">
+            <li class="webstudio-card">
               <div class="webstudio-card-image">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
               <h3 class="header-three">Diligence</h3>
-              <p>
+              <p class="webstudio-card-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="webstudio-card card">
+            <li class="webstudio-card">
               <div class="webstudio-card-image">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
               <h3 class="header-three">Technologies</h3>
-              <p>
+              <p class="webstudio-card-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -131,28 +144,40 @@
         </div>
       </section>
       <!--Section 3. About portfolio-->
-      <section class="section-alfa page">
+      <section class="portfolio-section section-alfa page">
         <div class="container">
           <h2 class="section-header header-two">What are we doing</h2>
-          <ul class="section-container">
-            <li class="portfolio-card card">
+          <ul class="portfolio-container">
+            <li class="portfolio-card">
               <img
                 class="photo"
-                src="./images/what-are-we-doing/monitor.jpg"
+                srcset="
+                  ./images/what-are-we-doing/img01@1x.jpg 1x,
+                  ./images/what-are-we-doing/img01@2x.jpg 2x
+                "
+                src="./images/what-are-we-doing/img01@1x.jpg"
                 alt="Graphs on monitor screen"
               />
             </li>
-            <li class="portfolio-card card">
+            <li class="portfolio-card">
               <img
                 class="photo"
-                src="./images/what-are-we-doing/phonescreens.jpg"
+                srcset="
+                  ./images/what-are-we-doing/img02@1x.jpg 1x,
+                  ./images/what-are-we-doing/img02@2x.jpg 2x
+                "
+                src="./images/what-are-we-doing/img02@1x.jpg"
                 alt="Smartphone four screenshots"
               />
             </li>
-            <li class="portfolio-card card">
+            <li class="portfolio-card">
               <img
                 class="photo"
-                src="./images/what-are-we-doing/phoneinhand.jpg"
+                srcset="
+                  ./images/what-are-we-doing/img03@1x.jpg 1x,
+                  ./images/what-are-we-doing/img03@2x.jpg 2x
+                "
+                src="./images/what-are-we-doing/img03@1x.jpg"
                 alt="Smartphone in hand with laptop on second plan"
               />
             </li>
@@ -163,15 +188,19 @@
       <section class="team section-beta page">
         <div class="container">
           <h2 class="section-header header-two">Our Team</h2>
-          <ul class="section-container">
-            <li class="team-card card">
+          <ul class="team-container">
+            <li class="team-card">
               <img
                 class="photo"
-                src="./images/team/markguerrero.jpg"
+                srcset="
+                  ./images/team/img01@1x.jpg 1x,
+                  ./images/team/img01@2x.jpg 2x
+                "
+                src="./images/team/img01@1x.jpg"
                 alt="Mark Guerrero"
               />
               <div class="team-card-content">
-                <h3 class="header-three">Mark Guerrero</h3>
+                <h3 class="header-four">Mark Guerrero</h3>
                 <p>Product Designer</p>
                 <ul class="team-social-list">
                   <li class="team-social-card">
@@ -213,14 +242,18 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card card">
+            <li class="team-card">
               <img
                 class="photo"
-                src="./images/team/tomford.jpg"
+                srcset="
+                  ./images/team/img02@1x.jpg 1x,
+                  ./images/team/img02@2x.jpg 2x
+                "
+                src="./images/team/img02@1x.jpg"
                 alt="Tom Ford"
               />
               <div class="team-card-content">
-                <h3 class="header-three">Tom Ford</h3>
+                <h3 class="header-four">Tom Ford</h3>
                 <p>Frontend Developer</p>
                 <ul class="team-social-list">
                   <li class="team-social-card">
@@ -262,14 +295,18 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card card">
+            <li class="team-card">
               <img
                 class="photo"
-                src="./images/team/camilagarcia.jpg"
+                srcset="
+                  ./images/team/img03@1x.jpg 1x,
+                  ./images/team/img03@2x.jpg 2x
+                "
+                src="./images/team/img03@1x.jpg"
                 alt="Camila Garcia"
               />
               <div class="team-card-content">
-                <h3 class="header-three">Camila Garcia</h3>
+                <h3 class="header-four">Camila Garcia</h3>
                 <p>Marketing</p>
                 <ul class="team-social-list">
                   <li class="team-social-card">
@@ -311,14 +348,18 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card card">
+            <li class="team-card">
               <img
                 class="photo"
-                src="./images/team/danielwilson.jpg"
+                srcset="
+                  ./images/team/img04@1x.jpg 1x,
+                  ./images/team/img04@2x.jpg 2x
+                "
+                src="./images/team/img04@1x.jpg"
                 alt="Daniel Wilson"
               />
               <div class="team-card-content">
-                <h3 class="header-three">Daniel Wilson</h3>
+                <h3 class="header-four">Daniel Wilson</h3>
                 <p>UI Designer</p>
                 <ul class="team-social-list">
                   <li class="team-social-card">
@@ -489,6 +530,75 @@
         </div>
       </div>
     </footer>
+    <!--Mobile menu-->
+    <div class="menu-hamburger-container js-menu-container" id="mobile-menu">
+      <button class="menu-hamburger-close-button js-close-menu">
+        <svg class="modal-close-button-cross" width="8" height="8">
+          <use href="./images/icons.svg#cross"></use>
+        </svg>
+      </button>
+      <ul class="mobile-nav-container">
+        <li class="mobile-nav-card">
+          <a class="mobile-nav-link" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-nav-card">
+          <a class="mobile-nav-link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-nav-card">
+          <a class="mobile-nav-link" href="">Contacts</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a class="mobile-address-tel" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="mobile-address-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social-list">
+        <li class="mobile-social-card">
+          <a
+            class="mobile-social-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            ><svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use></svg
+          ></a>
+        </li>
+        <li class="mobile-social-card">
+          <a
+            class="mobile-social-link"
+            href="https://twitter.com/"
+            target="_blank"
+            ><svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use></svg
+          ></a>
+        </li>
+        <li class="mobile-social-card">
+          <a
+            class="mobile-social-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            ><svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use></svg
+          ></a>
+        </li>
+        <li class="mobile-social-card">
+          <a
+            class="mobile-social-link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            ><svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
     <!--Modal window-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -575,6 +685,8 @@
         </form>
       </div>
     </div>
+    <!-- Mobile menu script -->
+    <script src="./js/mobile-menu.js"></script>
     <!-- Modal window script -->
     <script src="./js/modal.js"></script>
   </body>

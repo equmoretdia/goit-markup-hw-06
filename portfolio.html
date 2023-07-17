@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,22 +47,34 @@
           <ul class="address-container">
             <li>
               <a
-                class="header-link address-text"
+                class="header-address-link address-text"
                 href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="header-link address-text" href="tel:+110001111111"
+              <a
+                class="header-address-link address-text"
+                href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <!--menu hamburger-->
+        <button
+          class="menu-hamburger-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-hamburger-icon" width="32" height="22">
+            <use href="./images/icons.svg#menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
-      <section class="portfolio-page-section section-alfa page">
+      <section class="portfolio-page-section page">
         <div class="container">
           <h1 class="visually-hidden">Our Portfolio</h1>
           <!--Filters-->
@@ -89,8 +102,21 @@
               <a class="portfolio-page-card-link" href="">
                 <div class="portfolio-page-card-wrapper">
                   <img
-                    class="photo"
-                    src="./images/portfolio/img-1.jpg"
+                    class="photo mob-image"
+                    srcset="
+                      ./images/portfolio/mob/img01-mob@1x.jpg 1x,
+                      ./images/portfolio/mob/img01-mob@2x.jpg 2x
+                    "
+                    src="./images/portfolio/mob/img01-mob@1x.jpg"
+                    alt="purple bank app"
+                  />
+                  <img
+                    class="photo tab-desk-image"
+                    srcset="
+                      ./images/portfolio/img01@1x.jpg 1x,
+                      ./images/portfolio/img01@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img01@1x.jpg"
                     alt="purple bank app"
                   />
                   <p class="portfolio-page-card-overlay">
@@ -100,8 +126,8 @@
                   </p>
                 </div>
                 <div class="portfolio-page-card-content">
-                  <h2 class="header-three">Banking App Interface Concept</h2>
-                  <p>App</p>
+                  <h2 class="header-four">Banking App Interface Concept</h2>
+                  <p class="portfolio-page-card-text">App</p>
                 </div>
               </a>
             </li>
@@ -109,8 +135,21 @@
               <a class="portfolio-page-card-link" href="">
                 <div class="portfolio-page-card-wrapper">
                   <img
-                    class="photo"
-                    src="./images/portfolio/img-2.jpg"
+                    class="photo mob-image"
+                    srcset="
+                      ./images/portfolio/mob/img02-mob@1x.jpg 1x,
+                      ./images/portfolio/mob/img02-mob@2x.jpg 2x
+                    "
+                    src="./images/portfolio/mob/img02-mob@1x.jpg"
+                    alt="purple bank app"
+                  />
+                  <img
+                    class="photo tab-desk-image"
+                    srcset="
+                      ./images/portfolio/img02@1x.jpg 1x,
+                      ./images/portfolio/img02@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img02@1x.jpg"
                     alt="QRcode reader on smartphone"
                   />
                   <p class="portfolio-page-card-overlay">
@@ -120,8 +159,8 @@
                   </p>
                 </div>
                 <div class="portfolio-page-card-content">
-                  <h2 class="header-three">Cashless Payment</h2>
-                  <p>Marketing</p>
+                  <h2 class="header-four">Cashless Payment</h2>
+                  <p class="portfolio-page-card-text">Marketing</p>
                 </div>
               </a>
             </li>
@@ -129,8 +168,21 @@
               <a class="portfolio-page-card-link" href="">
                 <div class="portfolio-page-card-wrapper">
                   <img
-                    class="photo"
-                    src="./images/portfolio/img-3.jpg"
+                    class="photo mob-image"
+                    srcset="
+                      ./images/portfolio/mob/img03-mob@1x.jpg 1x,
+                      ./images/portfolio/mob/img03-mob@2x.jpg 2x
+                    "
+                    src="./images/portfolio/mob/img03-mob@1x.jpg"
+                    alt="purple bank app"
+                  />
+                  <img
+                    class="photo tab-desk-image"
+                    srcset="
+                      ./images/portfolio/img03@1x.jpg 1x,
+                      ./images/portfolio/img03@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img03@1x.jpg"
                     alt="return to normalcy tagline on laptop's and smartphone's screens"
                   />
                   <p class="portfolio-page-card-overlay">
@@ -140,8 +192,8 @@
                   </p>
                 </div>
                 <div class="portfolio-page-card-content">
-                  <h2 class="header-three">Meditation App</h2>
-                  <p>App</p>
+                  <h2 class="header-four">Meditation App</h2>
+                  <p class="portfolio-page-card-text">App</p>
                 </div>
               </a>
             </li>
@@ -150,8 +202,21 @@
               <a class="portfolio-page-card-link" href="">
                 <div class="portfolio-page-card-wrapper">
                   <img
-                    class="photo"
-                    src="./images/portfolio/img-4.jpg"
+                    class="photo mob-image"
+                    srcset="
+                      ./images/portfolio/mob/img04-mob@1x.jpg 1x,
+                      ./images/portfolio/mob/img04-mob@2x.jpg 2x
+                    "
+                    src="./images/portfolio/mob/img04-mob@1x.jpg"
+                    alt="purple bank app"
+                  />
+                  <img
+                    class="photo tab-desk-image"
+                    srcset="
+                      ./images/portfolio/img04@1x.jpg 1x,
+                      ./images/portfolio/img04@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img04@1x.jpg"
                     alt="driving in black gloves"
                   />
                   <p class="portfolio-page-card-overlay">
@@ -161,8 +226,8 @@
                   </p>
                 </div>
                 <div class="portfolio-page-card-content">
-                  <h2 class="header-three">Taxi Service</h2>
-                  <p>Marketing</p>
+                  <h2 class="header-four">Taxi Service</h2>
+                  <p class="portfolio-page-card-text">Marketing</p>
                 </div>
               </a>
             </li>
@@ -170,8 +235,21 @@
               <a class="portfolio-page-card-link" href="">
                 <div class="portfolio-page-card-wrapper">
                   <img
-                    class="photo"
-                    src="./images/portfolio/img-5.jpg"
+                    class="photo mob-image"
+                    srcset="
+                      ./images/portfolio/mob/img05-mob@1x.jpg 1x,
+                      ./images/portfolio/mob/img05-mob@2x.jpg 2x
+                    "
+                    src="./images/portfolio/mob/img05-mob@1x.jpg"
+                    alt="purple bank app"
+                  />
+                  <img
+                    class="photo tab-desk-image"
+                    srcset="
+                      ./images/portfolio/img05@1x.jpg 1x,
+                      ./images/portfolio/img05@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img05@1x.jpg"
                     alt="fantastic screensaver"
                   />
                   <p class="portfolio-page-card-overlay">
@@ -181,8 +259,8 @@
                   </p>
                 </div>
                 <div class="portfolio-page-card-content">
-                  <h2 class="header-three">Screen Illustrations</h2>
-                  <p>Design</p>
+                  <h2 class="header-four">Screen Illustrations</h2>
+                  <p class="portfolio-page-card-text">Design</p>
                 </div>
               </a>
             </li>
@@ -190,8 +268,21 @@
               <a class="portfolio-page-card-link" href="">
                 <div class="portfolio-page-card-wrapper">
                   <img
-                    class="photo"
-                    src="./images/portfolio/img-6.jpg"
+                    class="photo mob-image"
+                    srcset="
+                      ./images/portfolio/mob/img06-mob@1x.jpg 1x,
+                      ./images/portfolio/mob/img06-mob@2x.jpg 2x
+                    "
+                    src="./images/portfolio/mob/img06-mob@1x.jpg"
+                    alt="purple bank app"
+                  />
+                  <img
+                    class="photo tab-desk-image"
+                    srcset="
+                      ./images/portfolio/img06@1x.jpg 1x,
+                      ./images/portfolio/img06@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img06@1x.jpg"
                     alt="pretty woman is listening music from smartphone"
                   />
                   <p class="portfolio-page-card-overlay">
@@ -201,8 +292,8 @@
                   </p>
                 </div>
                 <div class="portfolio-page-card-content">
-                  <h2 class="header-three">Online Courses</h2>
-                  <p>Marketing</p>
+                  <h2 class="header-four">Online Courses</h2>
+                  <p class="portfolio-page-card-text">Marketing</p>
                 </div>
               </a>
             </li>
@@ -211,8 +302,21 @@
               <a class="portfolio-page-card-link" href="">
                 <div class="portfolio-page-card-wrapper">
                   <img
-                    class="photo"
-                    src="./images/portfolio/img-7.jpg"
+                    class="photo mob-image"
+                    srcset="
+                      ./images/portfolio/mob/img07-mob@1x.jpg 1x,
+                      ./images/portfolio/mob/img07-mob@2x.jpg 2x
+                    "
+                    src="./images/portfolio/mob/img07-mob@1x.jpg"
+                    alt="purple bank app"
+                  />
+                  <img
+                    class="photo tab-desk-image"
+                    srcset="
+                      ./images/portfolio/img07@1x.jpg 1x,
+                      ./images/portfolio/img07@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img07@1x.jpg"
                     alt="slides with a woman in white"
                   />
                   <p class="portfolio-page-card-overlay">
@@ -222,8 +326,8 @@
                   </p>
                 </div>
                 <div class="portfolio-page-card-content">
-                  <h2 class="header-three">Instagram Stories Concept</h2>
-                  <p>Design</p>
+                  <h2 class="header-four">Instagram Stories Concept</h2>
+                  <p class="portfolio-page-card-text">Design</p>
                 </div>
               </a>
             </li>
@@ -231,8 +335,21 @@
               <a class="portfolio-page-card-link" href="">
                 <div class="portfolio-page-card-wrapper">
                   <img
-                    class="photo"
-                    src="./images/portfolio/img-8.jpg"
+                    class="photo mob-image"
+                    srcset="
+                      ./images/portfolio/mob/img08-mob@1x.jpg 1x,
+                      ./images/portfolio/mob/img08-mob@2x.jpg 2x
+                    "
+                    src="./images/portfolio/mob/img08-mob@1x.jpg"
+                    alt="purple bank app"
+                  />
+                  <img
+                    class="photo tab-desk-image"
+                    srcset="
+                      ./images/portfolio/img08@1x.jpg 1x,
+                      ./images/portfolio/img08@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img08@1x.jpg"
                     alt="woman carries a mesh bag with vegetables"
                   />
                   <p class="portfolio-page-card-overlay">
@@ -242,8 +359,8 @@
                   </p>
                 </div>
                 <div class="portfolio-page-card-content">
-                  <h2 class="header-three">Organic Food</h2>
-                  <p>Web Site</p>
+                  <h2 class="header-four">Organic Food</h2>
+                  <p class="portfolio-page-card-text">Web Site</p>
                 </div>
               </a>
             </li>
@@ -251,8 +368,21 @@
               <a class="portfolio-page-card-link" href="">
                 <div class="portfolio-page-card-wrapper">
                   <img
-                    class="photo"
-                    src="./images/portfolio/img-9.jpg"
+                    class="photo mob-image"
+                    srcset="
+                      ./images/portfolio/mob/img09-mob@1x.jpg 1x,
+                      ./images/portfolio/mob/img09-mob@2x.jpg 2x
+                    "
+                    src="./images/portfolio/mob/img09-mob@1x.jpg"
+                    alt="purple bank app"
+                  />
+                  <img
+                    class="photo tab-desk-image"
+                    srcset="
+                      ./images/portfolio/img09@1x.jpg 1x,
+                      ./images/portfolio/img09@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img09@1x.jpg"
                     alt="pouring cream into a cup of coffee"
                   />
                   <p class="portfolio-page-card-overlay">
@@ -262,8 +392,8 @@
                   </p>
                 </div>
                 <div class="portfolio-page-card-content">
-                  <h2 class="header-three">Fresh Coffee</h2>
-                  <p>Web Site</p>
+                  <h2 class="header-four">Fresh Coffee</h2>
+                  <p class="portfolio-page-card-text">Web Site</p>
                 </div>
               </a>
             </li>
@@ -352,5 +482,76 @@
         </div>
       </div>
     </footer>
+    <!--Mobile menu-->
+    <div class="menu-hamburger-container js-menu-container" id="mobile-menu">
+      <button class="menu-hamburger-close-button js-close-menu">
+        <svg class="modal-close-button-cross" width="8" height="8">
+          <use href="./images/icons.svg#cross"></use>
+        </svg>
+      </button>
+      <ul class="mobile-nav-container">
+        <li class="mobile-nav-card">
+          <a class="mobile-nav-link" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-nav-card">
+          <a class="mobile-nav-link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-nav-card">
+          <a class="mobile-nav-link" href="">Contacts</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a class="mobile-address-tel" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="mobile-address-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social-list">
+        <li class="mobile-social-card">
+          <a
+            class="mobile-social-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            ><svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use></svg
+          ></a>
+        </li>
+        <li class="mobile-social-card">
+          <a
+            class="mobile-social-link"
+            href="https://twitter.com/"
+            target="_blank"
+            ><svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use></svg
+          ></a>
+        </li>
+        <li class="mobile-social-card">
+          <a
+            class="mobile-social-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            ><svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use></svg
+          ></a>
+        </li>
+        <li class="mobile-social-card">
+          <a
+            class="mobile-social-link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            ><svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <!-- Mobile menu script -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
